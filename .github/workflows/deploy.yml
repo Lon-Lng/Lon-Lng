@@ -24,12 +24,12 @@ jobs:
       - name: Setup PNPM
         uses: pnpm/action-setup@v3
         with:
-          version: 9 # 加上这一行！指定pnpm版本
+          version: 9
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22  # 改成22！满足Astro要求
           cache: 'pnpm'
 
       - name: Install dependencies
